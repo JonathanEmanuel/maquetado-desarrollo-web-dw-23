@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/textura.webp);
+}
+
+header {
+    background-color: #04BF9D;
+    height: 300px;
+    background-image: url(images/textura.webp);
+}
+
+header.catalogo {
+    background-color: #024959;
+    background-image: url(images/muebles.jpg);
+    background-size: cover;
+    background-position: 0% 75%;
+}
+
+header.catalogo h1 {
+    background-color: #00000045;
+}
+header.contactos {
+    background-color: #024959;
+    background-image: url(images/contactos.jpg);
+    background-size: cover;
+    background-position: 0% 70%;
+}
+
+header.contactos h1 {
+    text-shadow: 2px 2px 5px #000000;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 200px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 65px;
+    font-weight: 200;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+
+}
+h4 {
+    font-family: 'Raleway', sans-serif;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+}
+nav {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+nav ul {
+    list-style: none;
+    background-color: #BF665E;
+    padding: 16px;
+}
+
+ul li {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    border-bottom: 5px solid #024959;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f6f7f9;
+}
+
+.row {
+    width: 100%;
+}
+
+.col {
+    width: 45%;
+    padding: 20px;
+    display: inline-block;
+}
+
+.col img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.btn {
+    margin: 10px;
+    border: 1px solid #024959;
+    background-color: #024959;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.active {
+    border: 1px solid #024959;
+    background-color: #024959;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+
+}
+
+#recomendaciones {
+    background-color: grey;
+    padding: 40px;
+}
+
+#contactos {
+    height: 400px;
+    background-image: url(images/personas.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    padding: 20px;
+}
+
+#mapa {
+    padding: 20px;
+
+    height: 400px;
+
+}
+.card {
+    border: solid gray 2px;
+    width: 150px;
+    display: inline-block;
+    margin-left: 175px;
+    background-color: grey;
+}
+
+.card img {
+    border-radius: 100px;
+    padding: 10px;
+}
+
+.card h4 {
+    text-align: center;
+    color: white;
+}
+
+.mt-4 {
+    margin-top: 60px;
+}
+
+.body-galeria {
+
+    background-image: url(images/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.main-galerias {
+    background-color: #f6f7f983;
+}
+
+.galeria {
+    min-height: 500px;
+    padding: 30px;
+    background-color: #f6f7f9;
+}
+.foto {
+    border: 2px solid #424141;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    width: 400px;
+    filter: grayscale(1);
+
+}
+
+.foto:hover {
+    filter: grayscale(0);
+}
+
+footer {
+    background-color: #024959;
+    height: 100px;
+    color: white;
+}
