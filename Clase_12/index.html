@@ -9,11 +9,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/codigo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="script.js" defer></script> -->
+    <script src="script.js" defer></script>
 </head>
 <body>
     <nav>
+        <div class="menu-mobile">
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
         <ul>
             <li class="menu-item">
                 <a href="#inicio">Home</a>
@@ -22,7 +27,7 @@
                 <a href="#sobre-mi">Sobre mi</a>
             </li>
             <li class="menu-item sub-menu">
-                <a href="#lenguajes">Lenguajes</a>
+                <a href="#">Lenguajes <i class="fa-solid fa-caret-down"></i></a>
                 <ul class="menu-flotante">
                     <li class="menu-item">
                         <a href="#css">CSS</a>
@@ -52,9 +57,12 @@
     <main>
         <section id="sobre-mi">
             <h2>Sobre Mi</h2>
+            <h3>otro</h3>
+            <img src="images/codigo.png" alt="code">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quam quasi, quisquam assumenda neque corporis ab nulla dignissimos distinctio ullam rerum aut provident! Possimus necessitatibus maiores asperiores atque ut impedit?
             </p>
+
         </section>
         <section id="lenguajes">
             <h2>Lenguajes</h2>

@@ -1,5 +1,4 @@
-document.querySelector('.sub-menu').addEventListener('click', function(){
-    document.querySelector('.menu-flotante').classList.toggle('visible');
-    
+document.querySelector('.menu-mobile i').addEventListener('click', function(){
+    document.querySelector('nav > ul').classList.toggle('visible')    
 })
 
