@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetado y Desarrollo Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/codigo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="menu-mobile">
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+        <ul>
+            <li class="menu-item">
+                <a href="#inicio">Home</a>
+            </li>
+            <li class="menu-item">
+                <a href="#sobre-mi">Sobre mi</a>
+            </li>
+            <li class="menu-item sub-menu">
+                <a href="#">Lenguajes <i class="fa-solid fa-caret-down"></i></a>
+                <ul class="menu-flotante">
+                    <li class="menu-item">
+                        <a href="#css">CSS</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#js">JavaScript</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#python">Python</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#type">TypeScript</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="#formacion">Formación</a>
+            </li>
+            <li class="menu-item">
+                <a href="#contactos">Contactos</a>
+            </li>
+        </ul>
+    </nav>
+    <header id="inicio">
+        <h1>John Do</h1>
+    </header>
+    <main>
+        <section id="sobre-mi" class="bg-secondary">
+
+            <div class="row">
+                <div class="col">
+                    <h2>Programador Web</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odit modi natus amet ab, reprehenderit debitis.</p>
+                    <a class="btn" href="#contactos">Escribime</a>
+                </div>
+                <div class="col">
+                    <img class="img-responsive border-radius" src="images/john_do.jpg" alt="John Do">
+                </div>
+
+
+            </div>
+
+        </section>
+        <section id="lenguajes" class="bg-dark">
+            <h2 class="text-white" >Lenguajes</h2>
+
+            <div class="row">
+                <div class="col">
+                    <img class="img-responsive img-lenguajes" src="images/css-3.png" alt="CSS">
+                </div>
+                <div class="col">
+                    <img class="img-responsive img-lenguajes" src="images/js.png" alt="JavaScript">
+                </div>
+                <div class="col">
+                    <img class="img-responsive img-lenguajes" src="images/pyton.png" alt="Python">
+                </div>
+                <div class="col">
+                    <img class="img-responsive img-lenguajes" src="images/type.png" alt="TypeScript">
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="formacion" class="bg-secondary">
+
+            <div class="row">
+                <div class="col">
+                    <img class="img-responsive border-radius" src="images/code.jpg" alt="Code python">
+                </div>
+                <div class="col">
+                    <h2>Formación</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, iste reiciendis. Harum ullam provident laboriosam culpa possimus magni architecto inventore eveniet ipsa aspernatur praesentium assumenda, sequi consequatur, voluptas eaque neque?
+                    </p>
+                    <ul>
+                        <li> Diseñador y Programador Web</li>
+                        <li> Especialista en UX  </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </section>
+        
+        <section id="contactos" class="bg-secondary">
+            <div class="row">
+                <div class="col col-text">
+                    <h2>Hablamos?</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam quasi delectus cumque, recusandae incidunt obcaecati commodi, odit quis et, provident molestiae suscipit? Asperiores dolor voluptates animi mollitia molestiae? Totam, dignissimos.</p>
+                </div>
+                <div class="col col-form">
+
+                    <form action="index.html" method="post" class="formulario">
+                        <label for="nombre">Nombre</label>
+                        <input class="form-control mt-1" id="nombre" type="text">
+
+                        <label for="apellido">Apellido</label>
+                        <input class="form-control mt-1" id="apellido" type="text">
+
+                        <label for="tel">Teléfono</label>
+                        <input class="form-control mt-1" id="tel" type="tel">
+
+                        <label for="email">Email</label>
+                        <input class="form-control mt-1" id="email" type="email">
+
+                        <label for="consulta">Consulta por</label>
+                        <select class="form-control mt-1" id="consulta">
+                            <option value="1">Programación</option>
+                            <option value="2">Diseño Web</option>
+                            <option value="3">Diseño de prototipos</option>
+
+
+                        </select>
+
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="form-control mt-1" id="mensaje" cols="50" rows="5"></textarea>
+
+                        <label for="confirmar"><input type="checkbox"> Recibir Promociones </label>
+                        
+                        <hr>
+                        <button type="submit" class="btn btn-secondary">Enviar</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p> EMAE | Maquetado y Desarrollo Web | 2023</p>
+    </footer>
+</body>
+</html>
