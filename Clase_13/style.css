@@ -36,6 +36,7 @@ nav {
     display: inline-block;
     margin: 0 16px;
     padding: 4px;
+    transition: border-bottom ease 0.5s;
 }
 
 .menu-item:hover {
@@ -52,6 +53,7 @@ nav {
     position: relative;
   
     padding: 16px 0;
+
 }
 
 .menu-flotante {
@@ -61,6 +63,8 @@ nav {
     list-style: none;
     height: 140px;
     display: none;
+    transition: all ease 1s;
+
 }
 
 .visible {
@@ -239,10 +243,131 @@ footer p {
     color: #F7EF87;
 }
 
+.cajas {
+    display: flex;
+    justify-content: space-evenly;
+}
 
 
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #383C43;
+    border: 2px solid #FFF;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: ease-in-out all 1s;
+}
+
+.box p {
+    color: white;
+}
+
+.color:hover {
+    background-color: #f8f4b6;
+}
+.color:hover p {
+    color: #1a1d20;
+}
+
+.translate:hover {
+    transform: translate(20px, 50px)
+}
+
+.rotate:hover{
+    transform: rotate(75deg);
+}
+
+.scale:hover {
+    transform: scale(2);
+}
 
 
+.skew:hover {
+    transform: skew(30deg);
+}
+
+.input-buscar {
+    width: 10%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    transition: height 0.5s, width 1s;
+}
+
+.input-buscar:focus{
+    width: 100%;
+    height: 150px;
+}
+
+
+.animacion {
+    animation-name: nuevaanimacion;
+    animation-duration: 5s;
+}
+
+
+@keyframes nuevaanimacion {
+    0%{
+        transform: scale(0.5);
+    }
+    25%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+    }
+    75%{
+        transform: scale(2.5);
+    }
+}
+
+.movimiento {
+
+    font-size: 32px;
+    animation-name: cartel;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+@keyframes cartel {
+    0%{
+        transform: translate(-450px);
+    }
+    15%{
+        transform: translate(-350px);
+    }
+
+    25%{
+        transform: translate(-250px);
+    }
+    35%{
+        transform: translate(-150px);
+    }
+    50%{
+        transform: translate(-50px);
+    }
+    65%{
+        transform: translate(0px);
+    }
+    75%{
+        transform: translate(-450px);
+    }
+
+    100%{
+        transform: translate(150px);
+
+    }
+}
 
 
 /* Versión tablet */

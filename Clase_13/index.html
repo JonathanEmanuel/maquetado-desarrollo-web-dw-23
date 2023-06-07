@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="images/codigo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -58,12 +59,12 @@
         <section id="sobre-mi" class="bg-secondary">
 
             <div class="row">
-                <div class="col">
+                <div class="col" data-aos="fade-right">
                     <h2>Programador Web</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odit modi natus amet ab, reprehenderit debitis.</p>
                     <a class="btn" href="#contactos">Escribime</a>
                 </div>
-                <div class="col">
+                <div class="col" data-aos="fade-left">
                     <img class="img-responsive border-radius" src="images/john_do.jpg" alt="John Do">
                 </div>
 
@@ -76,17 +77,44 @@
 
             <div class="row">
                 <div class="col">
-                    <img class="img-responsive img-lenguajes" src="images/css-3.png" alt="CSS">
+                    <img data-aos="zoom-in" data-aos-duration="1000" class="img-responsive img-lenguajes" src="images/css-3.png" alt="CSS">
                 </div>
                 <div class="col">
-                    <img class="img-responsive img-lenguajes" src="images/js.png" alt="JavaScript">
+                    <img data-aos="zoom-in"  data-aos-duration="2000" class="img-responsive img-lenguajes" src="images/js.png" alt="JavaScript">
                 </div>
                 <div class="col">
-                    <img class="img-responsive img-lenguajes" src="images/pyton.png" alt="Python">
+                    <img data-aos="zoom-in"  data-aos-duration="3000" class="img-responsive img-lenguajes" src="images/pyton.png" alt="Python">
                 </div>
                 <div class="col">
-                    <img class="img-responsive img-lenguajes" src="images/type.png" alt="TypeScript">
+                    <img data-aos="zoom-in"  data-aos-duration="4000" class="img-responsive img-lenguajes" src="images/type.png" alt="TypeScript">
 
+                </div>
+            </div>
+
+        </section>
+
+        <section id="ejemplos">
+            <h2>Ejemplos de Transformaciones</h2>
+
+            <h4 class="movimiento">Texto con movimiento</h4>
+
+            <input type="search" class="input-buscar">
+
+            <div class="cajas">
+                <div class="box translate">
+                    <p>Transate</p>
+                </div>
+                <div class="box rotate">
+                    <p>Rotate</p>
+                </div>
+                <div class="box scale">
+                    <p>Escale</p>
+                </div>
+                <div class="box skew">
+                    <p>Skew</p>
+                </div>
+                <div class="box color">
+                    <p>color</p>
                 </div>
             </div>
 
@@ -119,7 +147,7 @@
                     <h2>Hablamos?</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam quasi delectus cumque, recusandae incidunt obcaecati commodi, odit quis et, provident molestiae suscipit? Asperiores dolor voluptates animi mollitia molestiae? Totam, dignissimos.</p>
                 </div>
-                <div class="col col-form">
+                <div class="col col-form" data-aos="zoom-in-up">
 
                     <form action="index.html" method="post" class="formulario">
                         <label for="nombre">Nombre</label>
@@ -160,5 +188,9 @@
     <footer>
         <p> EMAE | Maquetado y Desarrollo Web | 2023</p>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>  
+    <script>
+        AOS.init();
+      </script> 
 </body>
 </html>
